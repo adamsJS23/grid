@@ -1,0 +1,22 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "description": "Working with grid",
+  "main": "index.js",
+  "scripts": {
+    "node:sass": "node-sass main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamsJS23/grid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsJS23/grid/issues"
+  },
+  "homepage": "https://github.com/adamsJS23/grid#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
