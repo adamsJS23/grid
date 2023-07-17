@@ -137,7 +137,62 @@
   grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr);
 
   // width: 1000px;
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #eee;
+
+  & > * {
+    padding: 30px;
+    font-size: 24px;
+  }
+
+  &__item--1 {
+    background-color: orangered;
+  }
+
+  &__item--2 {
+    background-color: yellowgreen;
+  }
+
+  &__item--3 {
+    background-color: blueviolet;
+  }
+
+  &__item--4 {
+    background-color: palevioletred;
+  }
+
+  &__item--5 {
+    background-color: royalblue;
+  }
+
+  &__item--6 {
+    background-color: goldenrod;
+  }
+
+  &__item--7 {
+    background-color: crimson;
+  }
+
+  &__item--8 {
+    background-color: darkslategray;
+  }
+}
+
+.box {
+  display: grid;
+
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+
+  // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  // grid-auto-flow: row;
+  grid-auto-rows: 150px;
+
+  width: 1000px;
+  width: 95%;
   margin: 0 auto;
   margin-top: 30px;
   padding: 30px;
