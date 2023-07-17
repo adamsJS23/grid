@@ -99,7 +99,7 @@
   width: 1000px;
   margin: 0 auto;
   margin-top: 30px;
-  padding:30px;
+  padding: 30px;
   background-color: #eee;
 
   & > * {
@@ -108,19 +108,75 @@
     font-size: 24px;
   }
 
-  &__item--1{
+  &__item--1 {
     background-color: burlywood;
     align-self: flex-start;
     justify-self: center;
   }
 
-  &__item--3{
+  &__item--3 {
     background-color: yellowgreen;
-    grid-row: 2/span 3;
+    grid-row: 2 / span 3;
   }
 
-  &__item--8{
+  &__item--8 {
     align-self: center;
     justify-self: center;
+  }
+}
+
+.conteneur {
+  display: grid;
+  // grid-template-rows: repeat(2, 150px);
+  // grid-template-columns: max-content 1fr 1fr min-content;
+
+  // grid-template-rows: repeat(2, min-content);
+  // grid-template-rows: min-content min-content;
+
+  grid-template-rows: repeat(2, minmax(90px, min-content));
+  grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr);
+
+  // width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #eee;
+
+  & > * {
+    padding: 30px;
+    font-size: 24px;
+  }
+
+  &__item--1 {
+    background-color: orangered;
+  }
+
+  &__item--2 {
+    background-color: yellowgreen;
+  }
+
+  &__item--3 {
+    background-color: blueviolet;
+  }
+
+  &__item--4 {
+    background-color: palevioletred;
+  }
+
+  &__item--5 {
+    background-color: royalblue;
+  }
+
+  &__item--6 {
+    background-color: goldenrod;
+  }
+
+  &__item--7 {
+    background-color: crimson;
+  }
+
+  &__item--8 {
+    background-color: darkslategray;
   }
 }
